@@ -16,7 +16,7 @@ model = joblib.load(open("rf.pkl", "rb"))
 
 def index():
 
- return render_template("templates/index.html")
+ return render_template("index.html")
 
 
 @app.route("/predict", methods=["GET","POST"])
